@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Very Important Message</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .cake-container {
+            cursor: pointer;
+            animation: bounce 2s infinite;
+        }
+        .cake-image {
+            width: 200px;
+            height: auto;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #ff69b4;
+            text-align: center;
+            cursor: pointer;
+            animation: fadeIn 3s infinite;
+        }
+        .friend-container {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+        .friend-image {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .arrow {
+            font-size: 48px;
+            color: #333;
+        }
+        .rank-image {
+            width: 150px;
+            height: auto;
+        }
+        .image-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .caption {
+            margin-top: 5px;
+            font-size: 16px;
+            color: #333;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+        @keyframes fadeIn {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cake-container" onclick="redirectToLink()">
+        <img src="https://media0.giphy.com/media/STldBejNEFDtwV8roK/giphy.gif?cid=6c09b952rfxxwzudbf6sr5pgkiz8ct66vm5tzjk4ym7nh5y7&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" alt="Birthday Cake" class="cake-image">
+    </div>
+    <div class="message" onclick="redirectToLink()">
+        happy birthday nerd. i no play today, play ow tmr? :D ... OR GET ASC 3 LETS GO
+    </div>
+
+    <!-- New Section for Friend's Image and Rank -->
+    <div class="friend-container" onclick="redirectToLink()">
+        <div class="image-wrapper">
+            <img src="https://static-00.iconduck.com/assets.00/nerd-face-emoji-2048x2048-toyasgnd.png" alt="Friend's Picture" class="friend-image">
+            <div class="caption">(you)</div>
+        </div>
+        <div class="arrow">→</div>
+        <img src="https://listium-res.cloudinary.com/image/upload/w_800,h_800,c_limit,q_auto,f_auto/ndzgbtqvlixrl9ho5kj6.webp" alt="Ascendant Rank" class="rank-image">
+    </div>
+
+    <script>
+        function redirectToLink() {
+            window.location.href = 'https://example.com';
+        }
+    </script>
+</body>
+</html>
